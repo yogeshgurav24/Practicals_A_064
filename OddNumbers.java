@@ -35,7 +35,6 @@ class OddNumbers {
         int index = 0;
         int sum = 0;
 
-        // Store odd numbers
         for (int i = 1; i <= 50; i++) {
             if (i % 2 != 0) {
                 oddNumbers[index] = i;
@@ -44,25 +43,21 @@ class OddNumbers {
             }
         }
 
-        // Print odd numbers
         System.out.print("Odd Numbers: ");
         for (int i = 0; i < oddNumbers.length; i++) {
             System.out.print(oddNumbers[i] + " ");
         }
 
-        // Three minimum odd numbers
         System.out.print("\nThree Minimum Odd Numbers: ");
         for (int i = 0; i < 3; i++) {
             System.out.print(oddNumbers[i] + " ");
         }
 
-        // Three maximum odd numbers
         System.out.print("\nThree Maximum Odd Numbers: ");
         for (int i = oddNumbers.length - 3; i < oddNumbers.length; i++) {
             System.out.print(oddNumbers[i] + " ");
         }
 
-        // Average
         double average = (double) sum / oddNumbers.length;
         System.out.println("\nAverage of Odd Numbers: " + average);
     
